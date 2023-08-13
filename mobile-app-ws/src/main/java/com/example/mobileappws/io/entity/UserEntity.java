@@ -5,16 +5,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-import java.io.Serial;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity(name = "users")
 public class UserEntity implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -76854760916660252L;
 
-
+    private static final long serialVersionUID = -6033371624780951627L;
     @Id
     @GeneratedValue
     private long id;
